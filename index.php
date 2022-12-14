@@ -54,6 +54,17 @@
 </head>
 <body>
     
+    <ul>
+        <?php foreach( $hotels as $key => $hotel ) { ?>
+            <li >
+                <h4><?php echo $hotel['name']; ?></h4>
+                <h5><?php echo $hotel['description']; ?></h5>
+                <p class="block"><?php echo $hotel['parking']; ?></p>
+                <p class="block"><?php echo $hotel['vote']; ?></p>
+                <p><?php echo $hotel['distance_to_center']; ?></p>
+            </li>
+        <?php } ?>
+    </ul>
 
 
 <!-- Bootstrap CDN -->
